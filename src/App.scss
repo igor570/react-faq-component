@@ -1,0 +1,61 @@
+$font-family: 'Open Sans', sans-serif;
+$main_outline: rgba(0, 89, 178, 1) 2px solid;
+$main_color_transparent: rgba(0, 58, 117, 1);
+$main_color_text: rgba(153, 204, 243, 1);
+
+* {
+  font-family: $font-family;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(21, 26, 32);
+  height: 100%;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+/* Button Styling Options */
+
+.btn {
+  border: none;
+  outline: $main_outline;
+  background-color: transparent;
+  color: $main_color_text;
+  padding: 1rem 5rem;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $main_color_transparent;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+  }
+}
+.rnd-right {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.rnd-left {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+/* Button Styling Options */
+.textBlock {
+  margin-top: 2rem;
+  background-color: transparent;
+  color: $main_color_text;
+  padding: 3rem 13.4rem;
+  outline: white 1.5px solid;
+  font-weight: 600;
+  text-align: center;
+}
